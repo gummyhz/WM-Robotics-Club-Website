@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--wm-green);
 }
 
+
 img {
     max-inline-size: 100%;
 }
@@ -207,19 +208,40 @@ nav {
 
 
 /* HERO AT TOP */
+
+
 .hero {
     position: relative;
-    background: linear-gradient(135deg, var(--wm-green) 0%, var(--wm-gold) 100%);
+    /* background: linear-gradient(135deg, var(--wm-green) 0%, var(--wm-gold) 100%); */
     color: white;
     padding: 5rem 2rem 5rem;
     overflow: hidden;
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25), 
+                inset 0px -4px 12px rgba(0, 0, 0, 0.25);
+    background-image: url("./assets/072A1545.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
+#hero_sub {
+    color: var(--wm-accessible-light-gold);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 
 .hero-content {
     /* max-width: 1000px; */
     margin: 0 auto;
     position: relative;
     z-index: 1;
+}
+.hero-text {
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .hero-label {
@@ -233,7 +255,7 @@ nav {
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 700;
     color: white;
     line-height: 1.2;
